@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Remote Control",
+  "version": "0.1",
+  "description": "Control Google Meet with your bluetooth device.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "devices/G60SPro.js",
+        "devices/XiaomiButton.js",
+        "BluetoothDevice.js",
+        "GoogleMeetWrapper.js",
+        "main.js"
+      ]
+    }
+  ]
+}
